@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Recipe page</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,15 +8,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://r1cep.github.io/dev-challenges-recipe-page/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/r1cep/dev-challenges-recipe-page">
       Solution
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-challenge}">
+    <a href="https://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht">
       Challenge
     </a>
   </h3>
@@ -26,33 +26,38 @@
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Overview](#overview)
+  - [Desktop](#desktop)
+  - [Mobile](#mobile)
   - [Built With](#built-with)
 - [Features](#features)
-- [How to use](#how-to-use)
-- [Contact](#contact)
+- [How To Use](#how-to-use)
+- [learned/improved](#learnedimproved)
 - [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
 
 <!-- OVERVIEW -->
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+### Desktop
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+![desktop](./screenshots/desktop.png)
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+### Mobile
+
+![desktop](./screenshots/mobile.png)
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/ja/docs/Web/HTML)
+- [CSS: カスケーディングスタイルシート | MDN](https://developer.mozilla.org/ja/docs/Web/CSS)
+- [Node.js](https://nodejs.org/ja/): 18.7.0
+- [Vite | 次世代フロントエンドツール](https://ja.vitejs.dev/): 3.0.7
+- [Sass: Syntactically Awesome Style Sheets](https://sass-lang.com/): 1.54.8
 
 ## Features
 
@@ -60,9 +65,9 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/TtUjDt19eIHxNQ4n5jps) was to build an application to complete the following user stories:
 
-- [x] User story: This is a completed user stories
-- [ ] User story: This is a incompleted user stories
-- [ ] User story: This is a incompleted 2nd user stories
+- [x] User story: I can see a recipe with ingredients and instructions
+- [x] User story: I can select a checkbox if I have the ingredients
+- [x] User story: I can see the number of servings, baking times
 
 ## How To Use
 
@@ -70,25 +75,27 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/r1cep/dev-challenges-recipe-page
 
 # Install dependencies
-$ npm install
+$ pnpm i
 
 # Run the app
-$ npm start
+$ pnpm dev
 ```
+
+## learned/improved
+
+- Using a grid layout
+- How to style the number of list
 
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [【HTMLで箇条書き】ul・ol・liタグの使い方まとめ](https://saruwakakun.com/html-css/basic/ul-ol-li)
+- [コピペで使えるリストデザイン34選：CSSで箇条書きをおしゃれに](https://saruwakakun.com/html-css/reference/ul-ol-li-design)
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@r1cep](https://github.com/r1cep)
