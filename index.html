@@ -8,66 +8,126 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap" />
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&amp;family=Playfair+Display:ital,wght@0,700;1,400&amp;display=swap" />
+    <title>Recipe site</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank" rel="noreferrer">devchallenges.io</a>
-        </h1>
-
-        <p>If you have any questions, don't hesitate to ask on Discord. Here are 7 general steps to complete the challenge:</p>
+    <header class="header container">
+      <div class="header-content">
+        <h1 class="page-title">Classic Cheesecake Recipe</h1>
+        <p class="page-description">Look no further for a creamy and ultra smooth classic cheesecake recipe! Paired with a buttery graham cracker crust, no one can deny its simple decadence. For the best results, bake in a water bath.</p>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li><b>Step 3:</b> Login to Figma to checkout font, color, spacing,..</li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li><b>Step 7:</b> Share your solution on Discord, Twitter and other platforms to ask for feedback</li>
-      </ul>
+      <img class="hero" src="./photo1.png" alt="cheesecake image" width="969" height="444" decoding="async" />
+    </header>
+    <div class="main container">
+      <aside>
+        <div class="sidebar">
+          <div class="sidebar__item">
+            <span class="material-icons sidebar__icon--primary">restaurant_menu</span>
+            <div class="sidebar__content-wrapper">
+              <div class="sidebar__title actual">Yields</div>
+              <div class="sidebar__content sidebar__content--primary">12 servings</div>
+            </div>
+          </div>
+          <div class="sidebar__item">
+            <span class="material-icons sidebar__icon">query_builder</span>
+            <div class="sidebar__content-wrapper">
+              <div class="sidebar__title actual">Prep Time</div>
+              <div class="sidebar__content">45 minutes</div>
+            </div>
+          </div>
+          <div class="sidebar__item">
+            <span class="material-icons sidebar__icon">query_builder</span>
+            <div class="sidebar__content-wrapper">
+              <div class="sidebar__title actual">Cook Time</div>
+              <div class="sidebar__content">1 hour</div>
+            </div>
+          </div>
+          <div class="sidebar__item">
+            <span class="material-icons sidebar__icon">query_builder</span>
+            <div class="sidebar__content-wrapper">
+              <div class="sidebar__title actual">Total Time</div>
+              <div class="sidebar__content">7,75 hours</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <article class="recipe-container">
+          <section class="recipe">
+            <h2 class="recipe__title">Ingredients</h2>
+            <section>
+              <h3 class="recipe__sub-title">Graham Cracker Crust</h3>
+              <ul class="recipe__check-list">
+                <li class="recipe__check-item">
+                  <input type="checkbox" id="checkbox-01" />
+                  <label for="checkbox-01">1 and 1/2 cups (150g) <b>graham cracker crumbs</b> (about 10 full sheet graham crackers)</label>
+                </li>
+                <li class="recipe__check-item">
+                  <input type="checkbox" id="checkbox-02" />
+                  <label for="checkbox-02">5 Tablespoons (70g) <b>unsalted butter</b>, melted</label>
+                </li>
+                <li class="recipe__check-item">
+                  <input type="checkbox" id="checkbox-03" />
+                  <label for="checkbox-03">1/4 cup (50g) <b>granulated sugar</b></label>
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h3 class="recipe__sub-title">Cheesecake</h3>
+              <ul class="recipe__check-list">
+                <li class="recipe__check-item">
+                  <input type="checkbox" id="checkbox-04" />
+                  <label for="checkbox-04">four 8-ounce blocks (904g) full-fat <b>cream cheese</b>, softened to room temperature</label>
+                </li>
+                <li class="recipe__check-item">
+                  <input type="checkbox" id="checkbox-05" />
+                  <label for="checkbox-05">1 cup (200g) <b>granulated sugar</b></label>
+                </li>
+                <li class="recipe__check-item">
+                  <input type="checkbox" id="checkbox-06" />
+                  <label for="checkbox-06">1 cup (240g) full-fat <b>sour cream</b>, at room temperature</label>
+                </li>
+                <li class="recipe__check-item">
+                  <input type="checkbox" id="checkbox-07" />
+                  <label for="checkbox-07">1 teaspoon <b>pure vanilla extract</b></label>
+                </li>
+                <li class="recipe__check-item">
+                  <input type="checkbox" id="checkbox-08" />
+                  <label for="checkbox-08">2 teaspoons <b>fresh lemon juice</b> (optional, but recommended)</label>
+                </li>
+                <li class="recipe__check-item">
+                  <input type="checkbox" id="checkbox-09" />
+                  <label for="checkbox-09">3 large <b>eggs</b>, at room temperature</label>
+                </li>
+                <li class="recipe__check-item">
+                  <input type="checkbox" id="checkbox-10" />
+                  <label for="checkbox-10"
+                    >topping suggestions: <b><i>salted caramel, lemon curd, strawberry topping, chocolate ganache, red wine chocolate ganache, fresh fruit, whipped cream, or raspberry sauce</i></b> (recipe in notes)
+                  </label>
+                </li>
+              </ul>
+            </section>
+          </section>
+          <section class="recipe">
+            <h2 class="recipe__title">Instructions</h2>
+            <ol class="recipe__number-list">
+              <li class="recipe__number-item">Adjust the oven rack to the lower-middle position and preheat oven to 350°F (177°C).</li>
+              <li class="recipe__number-item">Make the crust: Using a food processor, pulse the graham crackers into crumbs. Pour into a medium bowl and stir in sugar and melted butter until combined. (You can also pulse it all together in the food processor.) Mixture will be sandy. Press firmly into the bottom and slightly up the sides of a 9-inch or 10-inch springform pan. No need to grease the pan first. I use the bottom of a measuring cup to pack the crust down tightly. Pre-bake for 8 minutes. Remove from the oven and place the hot pan on a large piece of aluminum foil. The foil will wrap around the pan for the water bath in step 4. Allow crust to slightly cool as you prepare the filling.</li>
+              <li class="recipe__number-item">Make the filling: Using a handheld or stand mixer fitted with a paddle attachment, beat the cream cheese and granulated sugar together on medium-high speed in a large bowl until the mixture is smooth and creamy, about 2 minutes. Add the sour cream, vanilla extract, and lemon juice then beat until fully combined. On medium speed, add the eggs one at a time, beating after each addition until just blended. After the final egg is incorporated into the batter, stop mixing. To help prevent the cheesecake from deflating and cracking as it cools, avoid over-mixing the batter as best you can.</li>
+              <li class="recipe__number-item">Prepare the simple water bath (see note) Boil a pot of water. You need 1 inch of water in your roasting pan for the water bath, so make sure you boil enough. I use an entire kettle of hot water. As the water is heating up, wrap the aluminum foil around the springform pan. Pour the cheesecake batter on top of the crust. Use a rubber spatula or spoon to smooth it into an even layer. Place the pan inside of a large roasting pan. Carefully pour the hot water inside of the pan and place in the oven. (Or you can place the roasting pan in the oven first, then pour the hot water in. Whichever is easier for you.)</li>
+              <li class="recipe__number-item">Bake cheesecake for 55-70 minutes or until the center is almost set. When it’s done, the center of the cheesecake will slightly wobble if you gently shake the pan. Turn the oven off and open the oven door slightly. Let the cheesecake sit in the oven in the water bath as it cools down for 1 hour. Remove from the oven and water bath, then cool cheesecake completely at room temperature. Then refrigerate the cheesecake for at least 4 hours or overnight.</li>
+              <li class="recipe__number-item">Use a knife to loosen the chilled cheesecake from the rim of the springform pan, then remove the rim. Using a clean sharp knife, cut into slices for serving. For neat slices, wipe the knife clean and dip into warm water between each slice.</li>
+              <li class="recipe__number-item">Serve cheesecake with desired toppings. Cover and store leftover cheesecake in the refrigerator for up to 5 days.</li>
+            </ol>
+          </section>
+          <p class="source">Source: https://sallysbakingaddiction.com/classic-cheesecake/</p>
+        </article>
+      </main>
     </div>
+    <footer class="footer container">
+      <small class="footer-signature">created by r1cep - devChallenges.io</small>
+    </footer>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
